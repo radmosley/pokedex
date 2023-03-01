@@ -1,0 +1,21 @@
+{% extends 'template.html' %}
+    {% block content %}
+    <div class="container d-flex flex-row flex-wrap">
+    {% for item in pokemon %}
+        <div class="card m-2" style="width: 18rem;">
+            <img src="{{ item.image_front }}"  class="card-img-top" width="150px">
+            <div class="card-body">
+                <h3 class="card-title"><a href="p/pokemon/{{ item.id }}">{{ item.name }}</a></h3>
+            </div>
+                <ul class="list-group list-group-flush">
+                    <!-- <li class="list-group-item">{{ item.number }} lbs</li> -->
+                    {% for type in item.types.all %}
+                    <li class="list-group-item">
+                        {{ type.name }}
+                    </li>
+                    {% endfor %}
+                </ul>
+        </div>
+        {% endfor %}
+    </div>
+    {% endblock %}
