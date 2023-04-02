@@ -1,16 +1,16 @@
 <template>
     <div class="container">
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Username</label>
-            <input type="email" v-model="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" v-model="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <button type="submit" @click="login()" class="btn btn-primary me-2">login</button>
-        <router-link to="/register"><button type="submit" class="btn btn-primary">register</button></router-link>
-        
+    <h2>Login</h2>
+    <form @submit.prevent="loginUser">
+  <div class="mb-3">
+    <input type="text" v-model="username" class="form-control bg-dark" placeholder="username">
+  </div>
+  <div class="mb-3">
+    <input type="password" v-model="password" class="form-control bg-dark" placeholder="password" id="exampleInputPassword1">
+  </div>
+  <button type="submit" class="btn btn-primary me-3">login</button>
+  <button type="submit" class="btn btn-primary"><a href="/register">register</a></button>
+</form>
     </div>
 </template>
 
@@ -19,27 +19,44 @@ import axios from 'axios'
 
 export default {
     name: 'LoginView',
-    data() {
+    data(){
         return {
             username: '',
-            password: '',
+            password: ''
         }
     },
     methods: {
-        login(){
-            if(!this.username && !this.password){
-                return
-            } else {
-                axios({
-                    method: 'post',
-                    url:'http://localhost:8000/u/login',
-                    data: {
-                        'username': this.username,
-                        'password': this.password,
-                    }
-                })
+        loginUser(){
+            axios.defaults.headers.common['Authorization'] = ''
+            localStorage.removeItem['access']
+
+            const formData = {
+                username: this.username,
+                password: this.password
             }
+            
+            axios.post('/api/v1/jwt/create', formData).then(response => {
+                console.log(response)
+                const access = response.data.access
+                const refresh = response.data.refresh
+
+                this.$store.commit('setAccess', access)
+                this.$store.commit('setRefresh', refresh)
+
+                axios.defaults.headers.common['Authorization'] = ' JWT ' + access
+                localStorage.setItem('access', access)
+                localStorage.setItem('refresh', refresh)
+                this.$router.push('/home')
+            }).catch(error => {
+                console.log(error)
+            })
         }
     }
 }
 </script>
+
+<style>
+.form-control::placeholder {
+    color: #FFFFFF;
+}
+</style>

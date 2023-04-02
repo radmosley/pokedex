@@ -1,0 +1,4880 @@
+[
+    {
+        "move_id": 601,
+        "move_name": "geomancy",
+        "move_type": "fairy",
+        "move_target": "user",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 0,
+        "category": "net-good-stats",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Takes one turn to charge, then raises the user's Special Attack, Special Defense, and Speed by two stages.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 602,
+        "move_name": "magnetic-flux",
+        "move_type": "electric",
+        "move_target": "user-and-allies",
+        "move_power": null,
+        "power_points": 20,
+        "priority": 0,
+        "category": "net-good-stats",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Raises the Defense and Special Defense of all friendly Pok\u00e9mon with plus or minus by one stage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 603,
+        "move_name": "happy-hour",
+        "move_type": "normal",
+        "move_target": "users-field",
+        "move_power": null,
+        "power_points": 30,
+        "priority": 0,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Doubles prize money.\n\nStacks with a held item.  Only works once per battle.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 604,
+        "move_name": "electric-terrain",
+        "move_type": "electric",
+        "move_target": "entire-field",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 0,
+        "category": "whole-field-effect",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "For five turns, prevents all Pok\u00e9mon on the ground from sleeping and strengthens their electric moves to 1.5\u00d7 their power.\n\nChanges nature power to thunderbolt.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 605,
+        "move_name": "dazzling-gleam",
+        "move_type": "fairy",
+        "move_target": "all-opponents",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 606,
+        "move_name": "celebrate",
+        "move_type": "normal",
+        "move_target": "user",
+        "move_power": null,
+        "power_points": 40,
+        "priority": 0,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Does nothing.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 607,
+        "move_name": "hold-hands",
+        "move_type": "normal",
+        "move_target": "ally",
+        "move_power": null,
+        "power_points": 40,
+        "priority": 0,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Does nothing.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 608,
+        "move_name": "baby-doll-eyes",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 30,
+        "priority": 1,
+        "category": "net-good-stats",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Lowers the target's Attack by one stage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 609,
+        "move_name": "nuzzle",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": 20,
+        "power_points": 20,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "paralysis",
+            "ailment_chance": 100
+        },
+        "move_description": "Inflicts regular damage.  Has a $effect_chance% chance to paralyze the target.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 610,
+        "move_name": "hold-back",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": 40,
+        "power_points": 40,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Will not reduce the target's HP below 1.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 611,
+        "move_name": "infestation",
+        "move_type": "bug",
+        "move_target": "selected-pokemon",
+        "move_power": 20,
+        "power_points": 20,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "special",
+        "status": {
+            "ailment": "trap",
+            "ailment_chance": 100
+        },
+        "move_description": "Inflicts regular damage.  For the next 2\u20135 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.  The user continues to use other moves during this time.  If the user leaves the field, this effect ends.\n\nHas a 3/8 chance each to hit 2 or 3 times, and a 1/8 chance each to hit 4 or 5 times.  Averages to 3 hits per use.\n\nrapid spin cancels this effect.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 612,
+        "move_name": "power-up-punch",
+        "move_type": "fighting",
+        "move_target": "selected-pokemon",
+        "move_power": 40,
+        "power_points": 20,
+        "priority": 0,
+        "category": "damage+raise",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Raises the user's Attack by one stage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 613,
+        "move_name": "oblivion-wing",
+        "move_type": "flying",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+heal",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Deals regular damage.  Drains 75% of the damage inflicted to heal the user.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 614,
+        "move_name": "thousand-arrows",
+        "move_type": "ground",
+        "move_target": "all-opponents",
+        "move_power": 90,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "unknown",
+            "ailment_chance": 100
+        },
+        "move_description": "Inflicts regular damage.  Grounds the target until it leaves battle.  Ignores levitation effects and the immunity of flying-type Pok\u00e9mon.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 615,
+        "move_name": "thousand-waves",
+        "move_type": "ground",
+        "move_target": "all-opponents",
+        "move_power": 90,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Traps the target.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 616,
+        "move_name": "lands-wrath",
+        "move_type": "ground",
+        "move_target": "all-opponents",
+        "move_power": 90,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 617,
+        "move_name": "light-of-ruin",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon",
+        "move_power": 140,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  User takes 1/2 the damage it inflicts in recoil.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 618,
+        "move_name": "origin-pulse",
+        "move_type": "water",
+        "move_target": "all-opponents",
+        "move_power": 110,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 85
+    },
+    {
+        "move_id": 619,
+        "move_name": "precipice-blades",
+        "move_type": "ground",
+        "move_target": "all-opponents",
+        "move_power": 120,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 85
+    },
+    {
+        "move_id": 620,
+        "move_name": "dragon-ascent",
+        "move_type": "flying",
+        "move_target": "selected-pokemon",
+        "move_power": 120,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage+raise",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage, then lowers the user's Defense and Special Defense by one stage each.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 621,
+        "move_name": "hyperspace-fury",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage+raise",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Bypasses and removes any protection effect on the target.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 622,
+        "move_name": "breakneck-blitz--physical",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 623,
+        "move_name": "breakneck-blitz--special",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 624,
+        "move_name": "all-out-pummeling--physical",
+        "move_type": "fighting",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 625,
+        "move_name": "all-out-pummeling--special",
+        "move_type": "fighting",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 626,
+        "move_name": "supersonic-skystrike--physical",
+        "move_type": "flying",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 627,
+        "move_name": "supersonic-skystrike--special",
+        "move_type": "flying",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 628,
+        "move_name": "acid-downpour--physical",
+        "move_type": "poison",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 629,
+        "move_name": "acid-downpour--special",
+        "move_type": "poison",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 630,
+        "move_name": "tectonic-rage--physical",
+        "move_type": "ground",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 631,
+        "move_name": "tectonic-rage--special",
+        "move_type": "ground",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 632,
+        "move_name": "continental-crush--physical",
+        "move_type": "rock",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 633,
+        "move_name": "continental-crush--special",
+        "move_type": "rock",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 634,
+        "move_name": "savage-spin-out--physical",
+        "move_type": "bug",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 635,
+        "move_name": "savage-spin-out--special",
+        "move_type": "bug",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 636,
+        "move_name": "never-ending-nightmare--physical",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 637,
+        "move_name": "never-ending-nightmare--special",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 638,
+        "move_name": "corkscrew-crash--physical",
+        "move_type": "steel",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 639,
+        "move_name": "corkscrew-crash--special",
+        "move_type": "steel",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 640,
+        "move_name": "inferno-overdrive--physical",
+        "move_type": "fire",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 641,
+        "move_name": "inferno-overdrive--special",
+        "move_type": "fire",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 642,
+        "move_name": "hydro-vortex--physical",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 643,
+        "move_name": "hydro-vortex--special",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 644,
+        "move_name": "bloom-doom--physical",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 645,
+        "move_name": "bloom-doom--special",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 646,
+        "move_name": "gigavolt-havoc--physical",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 647,
+        "move_name": "gigavolt-havoc--special",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 648,
+        "move_name": "shattered-psyche--physical",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 649,
+        "move_name": "shattered-psyche--special",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 650,
+        "move_name": "subzero-slammer--physical",
+        "move_type": "ice",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 651,
+        "move_name": "subzero-slammer--special",
+        "move_type": "ice",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 652,
+        "move_name": "devastating-drake--physical",
+        "move_type": "dragon",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 653,
+        "move_name": "devastating-drake--special",
+        "move_type": "dragon",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 654,
+        "move_name": "black-hole-eclipse--physical",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 655,
+        "move_name": "black-hole-eclipse--special",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 656,
+        "move_name": "twinkle-tackle--physical",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 657,
+        "move_name": "twinkle-tackle--special",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 658,
+        "move_name": "catastropika",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": 210,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 659,
+        "move_name": "shore-up",
+        "move_type": "ground",
+        "move_target": "user",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 0,
+        "category": "heal",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Heals the user for \u00bd its max HP.  During a sandstorm, the healing is increased to \u2154.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 660,
+        "move_name": "first-impression",
+        "move_type": "bug",
+        "move_target": "selected-pokemon",
+        "move_power": 90,
+        "power_points": 10,
+        "priority": 2,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage. Can only be used on the user's first turn after entering the field.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 661,
+        "move_name": "baneful-bunker",
+        "move_type": "poison",
+        "move_target": "user",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 4,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Grants the user protection for the rest of the turn.  If a Pok\u00e9mon attempts to use a move that makes contact with the user, that Pok\u00e9mon will be poisoned.  This move's chance of success halves every time it's used consecutively with any other protection move.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 662,
+        "move_name": "spirit-shackle",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Traps the target.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 663,
+        "move_name": "darkest-lariat",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": 85,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Damage calculation ignores the target's stat modifiers, including evasion.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 664,
+        "move_name": "sparkling-aria",
+        "move_type": "water",
+        "move_target": "all-other-pokemon",
+        "move_power": 90,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  If the target has a burn and takes damage from this move, its burn is healed.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 665,
+        "move_name": "ice-hammer",
+        "move_type": "ice",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+raise",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage, then lowers the user's Speed by one stage.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 666,
+        "move_name": "floral-healing",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 0,
+        "category": "heal",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Heals the target for \u00bd its max HP.  If grassy terrain is in effect, heals for \u2154 instead.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 667,
+        "move_name": "high-horsepower",
+        "move_type": "ground",
+        "move_target": "selected-pokemon",
+        "move_power": 95,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 95
+    },
+    {
+        "move_id": 668,
+        "move_name": "strength-sap",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 0,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Lowers the target's Attack by one stage.  Heals the user by the target's current Attack, including modifiers, but not including this move's Attack-lowering effect.\n\nIf the target's Attack is already at -6, this move will fail.  In any other situation that would prevent a stat modification, the healing will still succeed.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 669,
+        "move_name": "solar-blade",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": 125,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  User charges for one turn before attacking.\n\nDuring sunny day, the charge turn is skipped.\n\nDuring hail, rain dance, or sandstorm, power is halved.\n\nThis move cannot be selected by sleep talk.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 670,
+        "move_name": "leafage",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": 40,
+        "power_points": 40,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 671,
+        "move_name": "spotlight",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 15,
+        "priority": 3,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "For the duration of the turn, if the target is also a valid target for a move used by one of its opponents, that move will target it instead.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 672,
+        "move_name": "toxic-thread",
+        "move_type": "poison",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 20,
+        "priority": 0,
+        "category": "swagger",
+        "damage_class": "status",
+        "status": {
+            "ailment": "poison",
+            "ailment_chance": 100
+        },
+        "move_description": "Poisons the target and lowers its Speed by one stage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 673,
+        "move_name": "laser-focus",
+        "move_type": "normal",
+        "move_target": "user",
+        "move_power": null,
+        "power_points": 30,
+        "priority": 0,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "The user's next move will result in a critical hit.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 674,
+        "move_name": "gear-up",
+        "move_type": "steel",
+        "move_target": "user-and-allies",
+        "move_power": null,
+        "power_points": 20,
+        "priority": 0,
+        "category": "net-good-stats",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Raises the Attack and Special Attack of all friendly Pok\u00e9mon with plus or minus by one stage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 675,
+        "move_name": "throat-chop",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "silence",
+            "ailment_chance": 100
+        },
+        "move_description": "Inflicts regular damage.  Silences the target for two turns, preventing it from using any sound-based moves.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 676,
+        "move_name": "pollen-puff",
+        "move_type": "bug",
+        "move_target": "selected-pokemon",
+        "move_power": 90,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "If the target is an opponent, inflicts regular damage.  If the target is an ally, heals the target for 50% of its max HP.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 677,
+        "move_name": "anchor-shot",
+        "move_type": "steel",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 20,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Traps the target.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 678,
+        "move_name": "psychic-terrain",
+        "move_type": "psychic",
+        "move_target": "entire-field",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 0,
+        "category": "whole-field-effect",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Changes the terrain to Psychic Terrain for 5 turns.  Overrides electric terrain, grassy terrain, and misty terrain.\n\nAll Pok\u00e9mon on the ground are immune to moves with priority greater than 0.  (Moves that target the field rather than individual Pok\u00e9mon, such as spikes, are not affected.)  Additionally, when a Pok\u00e9mon on the ground uses a psychic-type move, that move's power is increased to 1.5\u00d7.\n\nIf a Pok\u00e9mon is holding a Terrain Extender when creating Psychic Terrain (by any means), the effect lasts for 8 turns instead of 5.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 679,
+        "move_name": "lunge",
+        "move_type": "bug",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage+lower",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Lowers the target's Attack by one stage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 680,
+        "move_name": "fire-lash",
+        "move_type": "fire",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage+lower",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Lowers the target's Defense by one stage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 681,
+        "move_name": "power-trip",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": 20,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Power is increased by 100% its original value for every stage any of the user's stats have been raised.  Accuracy, evasion, and lowered stats do not affect this move's power.  For a Pok\u00e9mon with all five stats modified to +6, this move's power is 31\u00d7.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 682,
+        "move_name": "burn-up",
+        "move_type": "fire",
+        "move_target": "selected-pokemon",
+        "move_power": 130,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Removes the user's fire type after damage calculation.  If the user is not fire-type, this move will fail.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 683,
+        "move_name": "speed-swap",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 0,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Exchanges the original Speed stats of the user and target.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 684,
+        "move_name": "smart-strike",
+        "move_type": "steel",
+        "move_target": "selected-pokemon",
+        "move_power": 70,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Ignores accuracy and evasion modifiers.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 685,
+        "move_name": "purify",
+        "move_type": "poison",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 20,
+        "priority": 0,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Cures the target of its major status ailment and heals the user for 50% of its max HP.  If the target has no major status ailment, this move will fail.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 686,
+        "move_name": "revelation-dance",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": 90,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  This move's type matches the user's first type, if any; otherwise, it's typeless.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 687,
+        "move_name": "core-enforcer",
+        "move_type": "dragon",
+        "move_target": "all-opponents",
+        "move_power": 100,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  If the target has already moved this turn, its ability is nullified.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 688,
+        "move_name": "trop-kick",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": 70,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage+lower",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Lowers the target's Attack by one stage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 689,
+        "move_name": "instruct",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 15,
+        "priority": 0,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "The target immediately uses its most recently-used move.  This is independent of the target's normal action for the turn (i.e., it may end up moving twice), but otherwise functions as usual, including deduction of PP.  This effect works for disabled moves and ignores torment.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 690,
+        "move_name": "beak-blast",
+        "move_type": "flying",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 15,
+        "priority": -3,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Begins charging at the start of the turn, then attacks as normal.  Any Pok\u00e9mon that makes contact with the user while charging is burned.  The charging is not affected by accuracy, sleep, paralysis, or any other effect that would interfere with a move.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 691,
+        "move_name": "clanging-scales",
+        "move_type": "dragon",
+        "move_target": "all-opponents",
+        "move_power": 110,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage+raise",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Lowers the user's Defense by one stage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 692,
+        "move_name": "dragon-hammer",
+        "move_type": "dragon",
+        "move_target": "selected-pokemon",
+        "move_power": 90,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 693,
+        "move_name": "brutal-swing",
+        "move_type": "dark",
+        "move_target": "all-other-pokemon",
+        "move_power": 60,
+        "power_points": 20,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 694,
+        "move_name": "aurora-veil",
+        "move_type": "ice",
+        "move_target": "users-field",
+        "move_power": null,
+        "power_points": 20,
+        "priority": 0,
+        "category": "field-effect",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Places the Aurora Veil effect on the user's side of the field for the next 5 turns.  If the weather is not hail, or the weather is disabled by the effects of cloud nine or air lock, this move will fail.\n\nAny regular damage dealt to an affected Pok\u00e9mon is reduced by \u00bd.  (If there are multiple Pok\u00e9mon on the affected field, the reduction is \u2153.)",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 695,
+        "move_name": "sinister-arrow-raid",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon",
+        "move_power": 180,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 696,
+        "move_name": "malicious-moonsault",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": 180,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 697,
+        "move_name": "oceanic-operetta",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": 195,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 698,
+        "move_name": "guardian-of-alola",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts direct damage equal to \u00be of the target's remaining HP.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 699,
+        "move_name": "soul-stealing-7-star-strike",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon",
+        "move_power": 195,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 700,
+        "move_name": "stoked-sparksurfer",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": 175,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "special",
+        "status": {
+            "ailment": "paralysis",
+            "ailment_chance": 100
+        },
+        "move_description": "Inflicts regular damage.  Has a $effect_chance% chance to paralyze the target.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 701,
+        "move_name": "pulverizing-pancake",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": 210,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 702,
+        "move_name": "extreme-evoboost",
+        "move_type": "normal",
+        "move_target": "user",
+        "move_power": null,
+        "power_points": 1,
+        "priority": 0,
+        "category": "net-good-stats",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by two stages each.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 703,
+        "move_name": "genesis-supernova",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 185,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage, then (if successful) changes the terrain to psychic terrain.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 704,
+        "move_name": "shell-trap",
+        "move_type": "fire",
+        "move_target": "all-opponents",
+        "move_power": 150,
+        "power_points": 5,
+        "priority": -3,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  If the user was not yet hit by an opponent's physical move this turn, this move will fail.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 705,
+        "move_name": "fleur-cannon",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon",
+        "move_power": 130,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage+raise",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage, then lowers the user's Special Attack by two stages.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 706,
+        "move_name": "psychic-fangs",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 85,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Destroys any light screen or reflect on the target's side of the field, then inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 707,
+        "move_name": "stomping-tantrum",
+        "move_type": "ground",
+        "move_target": "selected-pokemon",
+        "move_power": 75,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Power is doubled if the user's last move failed for any reason (i.e., produced the message \"But it failed!\") or was ineffective due to types.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 708,
+        "move_name": "shadow-bone",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon",
+        "move_power": 85,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+lower",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Has a $effect_chance% chance to lower the target's Defense by one stage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 709,
+        "move_name": "accelerock",
+        "move_type": "rock",
+        "move_target": "selected-pokemon",
+        "move_power": 40,
+        "power_points": 20,
+        "priority": 1,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 710,
+        "move_name": "liquidation",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": 85,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+lower",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Has a $effect_chance% chance to lower the target's Defense by one stage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 711,
+        "move_name": "prismatic-laser",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 160,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  User loses its next turn to \"recharge\", and cannot attack or switch out during that turn.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 712,
+        "move_name": "spectral-thief",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon",
+        "move_power": 90,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Steals the target's stat increases, then inflicts regular damage.  Will not steal stat increases that would put any of the user's stats at more than +6; any excess is left on the target.  Stolen increases are affected by abilities as normal.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 713,
+        "move_name": "sunsteel-strike",
+        "move_type": "steel",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Other Pok\u00e9mon's abilities cannot activate in response to this move.  In particular, it hits through disguise",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 714,
+        "move_name": "moongeist-beam",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Other Pok\u00e9mon's abilities cannot activate in response to this move.  In particular, it hits through disguise",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 715,
+        "move_name": "tearful-look",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 20,
+        "priority": 0,
+        "category": "net-good-stats",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Lowers the target's Attack and Special Attack by one stage each.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 716,
+        "move_name": "zing-zap",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Has a $effect_chance% chance to make the target flinch.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 717,
+        "move_name": "natures-madness",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts typeless damage equal to half the target's remaining HP.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 718,
+        "move_name": "multi-attack",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": 120,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  If the user is holding a plate or a drive, this move's type is the type corresponding to that item.\n\nNote: This effect is technically shared by both techno blast and judgment; however, Techno Blast is only affected by drives, and Judgment is only affected by plates.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 719,
+        "move_name": "10-000-000-volt-thunderbolt",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": 195,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 720,
+        "move_name": "mind-blown",
+        "move_type": "fire",
+        "move_target": "all-other-pokemon",
+        "move_power": 150,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts damage, and the user takes damage equal to half of its max HP, rounded up. The user still takes damage if the move is blocked by Protect or Substitute, misses, or if the target has Flash Fire.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 721,
+        "move_name": "plasma-fists",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 722,
+        "move_name": "photon-geyser",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 723,
+        "move_name": "light-that-burns-the-sky",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 200,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts damage using either Attack or Special Attack stat, whichever is higher. Determining which stat is used takes into account stat changes but not held items or abilities.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 724,
+        "move_name": "searing-sunraze-smash",
+        "move_type": "steel",
+        "move_target": "selected-pokemon",
+        "move_power": 200,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Other Pok\u00e9mon's abilities cannot activate in response to this move.  In particular, it hits through disguise",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 725,
+        "move_name": "menacing-moonraze-maelstrom",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon",
+        "move_power": 200,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Other Pok\u00e9mon's abilities cannot activate in response to this move.  In particular, it hits through disguise",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 726,
+        "move_name": "lets-snuggle-forever",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon",
+        "move_power": 190,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "After inflicting damage, all Normal-type moves become Electric-type for the remainder of the turn, including status moves. This effect is applied after move type-changing abilities, such as Pixilate and Normalize.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 727,
+        "move_name": "splintered-stormshards",
+        "move_type": "rock",
+        "move_target": "selected-pokemon",
+        "move_power": 190,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts damage and removes any terrain present on the battlefield.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 728,
+        "move_name": "clangorous-soulblaze",
+        "move_type": "dragon",
+        "move_target": "all-opponents",
+        "move_power": 185,
+        "power_points": 1,
+        "priority": 0,
+        "category": "damage+raise",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts sound-based damage to all opposing Pok\u00e9mon and increases the user's Attack, Defense, Special Attack, Special Defense, and Speed by one stage each. The user's stats are not raised if the move fails to damage any opposing Pok\u00e9mon.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 729,
+        "move_name": "zippy-zap",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 2,
+        "category": "damage+raise",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 730,
+        "move_name": "splishy-splash",
+        "move_type": "water",
+        "move_target": "all-opponents",
+        "move_power": 90,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "special",
+        "status": {
+            "ailment": "paralysis",
+            "ailment_chance": 30
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 731,
+        "move_name": "floaty-fall",
+        "move_type": "flying",
+        "move_target": "selected-pokemon",
+        "move_power": 90,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 95
+    },
+    {
+        "move_id": 732,
+        "move_name": "pika-papow",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 20,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 733,
+        "move_name": "bouncy-bubble",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": 60,
+        "power_points": 20,
+        "priority": 0,
+        "category": "damage+heal",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 734,
+        "move_name": "buzzy-buzz",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": 60,
+        "power_points": 20,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "special",
+        "status": {
+            "ailment": "paralysis",
+            "ailment_chance": 100
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 735,
+        "move_name": "sizzly-slide",
+        "move_type": "fire",
+        "move_target": "selected-pokemon",
+        "move_power": 60,
+        "power_points": 20,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "burn",
+            "ailment_chance": 100
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 736,
+        "move_name": "glitzy-glow",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 95
+    },
+    {
+        "move_id": 737,
+        "move_name": "baddy-bad",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 95
+    },
+    {
+        "move_id": 738,
+        "move_name": "sappy-seed",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "leech-seed",
+            "ailment_chance": 100
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 739,
+        "move_name": "freezy-frost",
+        "move_type": "ice",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 740,
+        "move_name": "sparkly-swirl",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon",
+        "move_power": 120,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 85
+    },
+    {
+        "move_id": 741,
+        "move_name": "veevee-volley",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 20,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 742,
+        "move_name": "double-iron-bash",
+        "move_type": "steel",
+        "move_target": "selected-pokemon",
+        "move_power": 60,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Hits twice in one turn.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 743,
+        "move_name": "max-guard",
+        "move_type": "normal",
+        "move_target": "user",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 4,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "No moves will hit the user for the remainder of this turn.  If the user is last to act this turn, this move will fail.\n\nIf the user successfully used detect, endure, protect, quick guard, or wide guard on the last turn, this move has a 50% chance to fail.\n\nlock on, mind reader, and no guard provide a (100 \u2013 accuracy)% chance for moves to break through this move.  This does not apply to one-hit KO moves (fissure, guillotine, horn drill, and sheer cold); those are always blocked by this move.\n\nthunder during rain dance and blizzard during hail have a 30% chance to break through this move.\n\nThe following effects are not prevented by this move:\n\n* acupressure from an ally\n* curse's curse effect\n* Delayed damage from doom desire and future sight; however, these moves will be prevented if they are used this turn\n* feint, which will also end this move's protection after it hits\n* imprison\n* perish song\n* shadow force\n* Moves that merely copy the user, such as transform or psych up\n\nThis move cannot be selected by assist or metronome.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 744,
+        "move_name": "dynamax-cannon",
+        "move_type": "dragon",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage, then (if successful) sets light screen on the user's side of the field.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 745,
+        "move_name": "snipe-shot",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage, then (if successful) sets reflect on the user's side of the field.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 746,
+        "move_name": "jaw-lock",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage, then (if successful) sets leech seed on the target.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 747,
+        "move_name": "stuff-cheeks",
+        "move_type": "normal",
+        "move_target": "user",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 0,
+        "category": "net-good-stats",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage, then (if successful) removes major status effects from every Pok\u00e9mon in the user's party.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 748,
+        "move_name": "no-retreat",
+        "move_type": "fighting",
+        "move_target": "user",
+        "move_power": null,
+        "power_points": 5,
+        "priority": 0,
+        "category": "net-good-stats",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Hits twice in one turn, with a $effect_chance% chance to make the target flinch.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 749,
+        "move_name": "tar-shot",
+        "move_type": "rock",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 15,
+        "priority": 0,
+        "category": "swagger",
+        "damage_class": "status",
+        "status": {
+            "ailment": "tar-shot",
+            "ailment_chance": 100
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 750,
+        "move_name": "magic-powder",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 20,
+        "priority": 0,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 751,
+        "move_name": "dragon-darts",
+        "move_type": "dragon",
+        "move_target": "selected-pokemon",
+        "move_power": 50,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 752,
+        "move_name": "teatime",
+        "move_type": "normal",
+        "move_target": "all-pokemon",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 0,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 753,
+        "move_name": "octolock",
+        "move_type": "fighting",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 15,
+        "priority": 0,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 754,
+        "move_name": "bolt-beak",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": 85,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 755,
+        "move_name": "fishious-rend",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": 85,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 756,
+        "move_name": "court-change",
+        "move_type": "normal",
+        "move_target": "entire-field",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 0,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 757,
+        "move_name": "max-flare",
+        "move_type": "fire",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 100,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 758,
+        "move_name": "max-flutterby",
+        "move_type": "bug",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 759,
+        "move_name": "max-lightning",
+        "move_type": "electric",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 760,
+        "move_name": "max-strike",
+        "move_type": "normal",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 761,
+        "move_name": "max-knuckle",
+        "move_type": "fighting",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 762,
+        "move_name": "max-phantasm",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 763,
+        "move_name": "max-hailstorm",
+        "move_type": "ice",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 764,
+        "move_name": "max-ooze",
+        "move_type": "poison",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 765,
+        "move_name": "max-geyser",
+        "move_type": "water",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 766,
+        "move_name": "max-airstream",
+        "move_type": "flying",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 767,
+        "move_name": "max-starfall",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 768,
+        "move_name": "max-wyrmwind",
+        "move_type": "dragon",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 769,
+        "move_name": "max-mindstorm",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 770,
+        "move_name": "max-rockfall",
+        "move_type": "rock",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 771,
+        "move_name": "max-quake",
+        "move_type": "ground",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 772,
+        "move_name": "max-darkness",
+        "move_type": "dark",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 773,
+        "move_name": "max-overgrowth",
+        "move_type": "grass",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 774,
+        "move_name": "max-steelspike",
+        "move_type": "steel",
+        "move_target": "selected-pokemon-me-first",
+        "move_power": 10,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 775,
+        "move_name": "clangorous-soul",
+        "move_type": "dragon",
+        "move_target": "user",
+        "move_power": null,
+        "power_points": 5,
+        "priority": 0,
+        "category": "net-good-stats",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 776,
+        "move_name": "body-press",
+        "move_type": "fighting",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 777,
+        "move_name": "decorate",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon",
+        "move_power": null,
+        "power_points": 15,
+        "priority": 0,
+        "category": "net-good-stats",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 778,
+        "move_name": "drum-beating",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+lower",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Has a $effect_chance% chance to lower the target's Speed by one stage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 779,
+        "move_name": "snap-trap",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": 35,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "trap",
+            "ailment_chance": 100
+        },
+        "move_description": "Inflicts regular damage.  For the next 2\u20135 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.  The user continues to use other moves during this time.  If the user leaves the field, this effect ends.\n\nHas a 3/8 chance each to hit 2 or 3 times, and a 1/8 chance each to hit 4 or 5 times.  Averages to 3 hits per use.\n\nrapid spin cancels this effect.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 780,
+        "move_name": "pyro-ball",
+        "move_type": "fire",
+        "move_target": "selected-pokemon",
+        "move_power": 120,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "burn",
+            "ailment_chance": 10
+        },
+        "move_description": "Inflicts regular damage.  Has a $effect_chance% chance to burn the target.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 781,
+        "move_name": "behemoth-blade",
+        "move_type": "steel",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 782,
+        "move_name": "behemoth-bash",
+        "move_type": "steel",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 783,
+        "move_name": "aura-wheel",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": 110,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+raise",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 784,
+        "move_name": "breaking-swipe",
+        "move_type": "dragon",
+        "move_target": "all-opponents",
+        "move_power": 60,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage+lower",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Lowers the target's Attack by one stage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 785,
+        "move_name": "branch-poke",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": 40,
+        "power_points": 40,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 786,
+        "move_name": "overdrive",
+        "move_type": "electric",
+        "move_target": "all-opponents",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 787,
+        "move_name": "apple-acid",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+lower",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 788,
+        "move_name": "grav-apple",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+lower",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Lowers the target's Defense by one stage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 789,
+        "move_name": "spirit-break",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon",
+        "move_power": 75,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage+lower",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Has a $effect_chance% chance to lower the target's Special Attack by one stage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 790,
+        "move_name": "strange-steam",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon",
+        "move_power": 90,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "special",
+        "status": {
+            "ailment": "confusion",
+            "ailment_chance": 20
+        },
+        "move_description": "Inflicts regular damage.  Has a $effect_chance% chance to confuse the target.",
+        "move_accuracy": 95
+    },
+    {
+        "move_id": 791,
+        "move_name": "life-dew",
+        "move_type": "water",
+        "move_target": "user-and-allies",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 0,
+        "category": "heal",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 792,
+        "move_name": "obstruct",
+        "move_type": "dark",
+        "move_target": "user",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 4,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 793,
+        "move_name": "false-surrender",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  Ignores accuracy and evasion modifiers.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 794,
+        "move_name": "meteor-assault",
+        "move_type": "fighting",
+        "move_target": "selected-pokemon",
+        "move_power": 150,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  User loses its next turn to \"recharge\", and cannot attack or switch out during that turn.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 795,
+        "move_name": "eternabeam",
+        "move_type": "dragon",
+        "move_target": "selected-pokemon",
+        "move_power": 160,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.  User loses its next turn to \"recharge\", and cannot attack or switch out during that turn.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 796,
+        "move_name": "steel-beam",
+        "move_type": "steel",
+        "move_target": "selected-pokemon",
+        "move_power": 140,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts damage, and the user takes damage equal to half of its max HP, rounded up. The user still takes damage if the move is blocked by Protect or Substitute, misses, or if the target has Flash Fire.",
+        "move_accuracy": 95
+    },
+    {
+        "move_id": 797,
+        "move_name": "expanding-force",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 798,
+        "move_name": "steel-roller",
+        "move_type": "steel",
+        "move_target": "selected-pokemon",
+        "move_power": 130,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 799,
+        "move_name": "scale-shot",
+        "move_type": "dragon",
+        "move_target": "selected-pokemon",
+        "move_power": 25,
+        "power_points": 20,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage two to five times in a row, raising the user's Speed and lowering the user's Defense by one stage each upon last hit.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 800,
+        "move_name": "meteor-beam",
+        "move_type": "rock",
+        "move_target": "selected-pokemon",
+        "move_power": 120,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 100
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 801,
+        "move_name": "shell-side-arm",
+        "move_type": "poison",
+        "move_target": "selected-pokemon",
+        "move_power": 90,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "special",
+        "status": {
+            "ailment": "poison",
+            "ailment_chance": 20
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 802,
+        "move_name": "misty-explosion",
+        "move_type": "fairy",
+        "move_target": "all-other-pokemon",
+        "move_power": 100,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 803,
+        "move_name": "grassy-glide",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": 70,
+        "power_points": 20,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 804,
+        "move_name": "rising-voltage",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": 70,
+        "power_points": 20,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 805,
+        "move_name": "terrain-pulse",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": 50,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 806,
+        "move_name": "skitter-smack",
+        "move_type": "bug",
+        "move_target": "selected-pokemon",
+        "move_power": 70,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+lower",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 807,
+        "move_name": "burning-jealousy",
+        "move_type": "fire",
+        "move_target": "all-opponents",
+        "move_power": 70,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "special",
+        "status": {
+            "ailment": "burn",
+            "ailment_chance": 100
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 808,
+        "move_name": "lash-out",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": 75,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 809,
+        "move_name": "poltergeist",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon",
+        "move_power": 110,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 810,
+        "move_name": "corrosive-gas",
+        "move_type": "poison",
+        "move_target": "all-other-pokemon",
+        "move_power": null,
+        "power_points": 40,
+        "priority": 0,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 811,
+        "move_name": "coaching",
+        "move_type": "fighting",
+        "move_target": "user-and-allies",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 0,
+        "category": "net-good-stats",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 812,
+        "move_name": "flip-turn",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": 60,
+        "power_points": 20,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 813,
+        "move_name": "triple-axel",
+        "move_type": "ice",
+        "move_target": "selected-pokemon",
+        "move_power": 20,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 814,
+        "move_name": "dual-wingbeat",
+        "move_type": "flying",
+        "move_target": "selected-pokemon",
+        "move_power": 40,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 815,
+        "move_name": "scorching-sands",
+        "move_type": "ground",
+        "move_target": "selected-pokemon",
+        "move_power": 70,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "special",
+        "status": {
+            "ailment": "burn",
+            "ailment_chance": 30
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 816,
+        "move_name": "jungle-healing",
+        "move_type": "grass",
+        "move_target": "user-and-allies",
+        "move_power": null,
+        "power_points": 10,
+        "priority": 0,
+        "category": "unique",
+        "damage_class": "status",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 817,
+        "move_name": "wicked-blow",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 818,
+        "move_name": "surging-strikes",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": 25,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 819,
+        "move_name": "thunder-cage",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 15,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "special",
+        "status": {
+            "ailment": "trap",
+            "ailment_chance": 100
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 820,
+        "move_name": "dragon-energy",
+        "move_type": "dragon",
+        "move_target": "all-opponents",
+        "move_power": 150,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 821,
+        "move_name": "freezing-glare",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 90,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+ailment",
+        "damage_class": "special",
+        "status": {
+            "ailment": "freeze",
+            "ailment_chance": 10
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 822,
+        "move_name": "fiery-wrath",
+        "move_type": "dark",
+        "move_target": "all-opponents",
+        "move_power": 90,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 823,
+        "move_name": "thunderous-kick",
+        "move_type": "fighting",
+        "move_target": "selected-pokemon",
+        "move_power": 90,
+        "power_points": 10,
+        "priority": 0,
+        "category": "damage+lower",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 824,
+        "move_name": "glacial-lance",
+        "move_type": "ice",
+        "move_target": "all-opponents",
+        "move_power": 130,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "physical",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 825,
+        "move_name": "astral-barrage",
+        "move_type": "ghost",
+        "move_target": "all-opponents",
+        "move_power": 120,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 826,
+        "move_name": "eerie-spell",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 5,
+        "priority": 0,
+        "category": "damage",
+        "damage_class": "special",
+        "status": {
+            "ailment": "none",
+            "ailment_chance": 0
+        },
+        "move_description": "Inflicts regular damage.",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 827,
+        "move_name": "dire-claw",
+        "move_type": "poison",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 15,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 828,
+        "move_name": "psyshield-bash",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 70,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 829,
+        "move_name": "power-shift",
+        "move_type": "normal",
+        "move_target": "user",
+        "move_power": 0,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "status",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 830,
+        "move_name": "stone-axe",
+        "move_type": "rock",
+        "move_target": "selected-pokemon",
+        "move_power": 65,
+        "power_points": 15,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 831,
+        "move_name": "springtide-storm",
+        "move_type": "fairy",
+        "move_target": "all-opponents",
+        "move_power": 100,
+        "power_points": 5,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 80
+    },
+    {
+        "move_id": 832,
+        "move_name": "mystical-power",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 70,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 833,
+        "move_name": "raging-fury",
+        "move_type": "fire",
+        "move_target": "random-opponent",
+        "move_power": 120,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 834,
+        "move_name": "wave-crash",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": 120,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 835,
+        "move_name": "chloroblast",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": 150,
+        "power_points": 5,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 95
+    },
+    {
+        "move_id": 836,
+        "move_name": "mountain-gale",
+        "move_type": "ice",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 85
+    },
+    {
+        "move_id": 837,
+        "move_name": "victory-dance",
+        "move_type": "fighting",
+        "move_target": "user",
+        "move_power": 0,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "status",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 838,
+        "move_name": "headlong-rush",
+        "move_type": "ground",
+        "move_target": "selected-pokemon",
+        "move_power": 120,
+        "power_points": 5,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 839,
+        "move_name": "barb-barrage",
+        "move_type": "poison",
+        "move_target": "selected-pokemon",
+        "move_power": 60,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 840,
+        "move_name": "esper-wing",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 841,
+        "move_name": "bitter-malice",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon",
+        "move_power": 75,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 842,
+        "move_name": "shelter",
+        "move_type": "steel",
+        "move_target": "user",
+        "move_power": 0,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "status",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 843,
+        "move_name": "triple-arrows",
+        "move_type": "fighting",
+        "move_target": "selected-pokemon",
+        "move_power": 90,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 844,
+        "move_name": "infernal-parade",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon",
+        "move_power": 60,
+        "power_points": 15,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 845,
+        "move_name": "ceaseless-edge",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": 65,
+        "power_points": 15,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 846,
+        "move_name": "bleakwind-storm",
+        "move_type": "flying",
+        "move_target": "all-opponents",
+        "move_power": 100,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 80
+    },
+    {
+        "move_id": 847,
+        "move_name": "wildbolt-storm",
+        "move_type": "electric",
+        "move_target": "all-opponents",
+        "move_power": 100,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 80
+    },
+    {
+        "move_id": 848,
+        "move_name": "sandsear-storm",
+        "move_type": "ground",
+        "move_target": "all-opponents",
+        "move_power": 100,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 80
+    },
+    {
+        "move_id": 849,
+        "move_name": "lunar-blessing",
+        "move_type": "psychic",
+        "move_target": "all-allies",
+        "move_power": 0,
+        "power_points": 5,
+        "priority": 0,
+        "category": "",
+        "damage_class": "status",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 850,
+        "move_name": "take-heart",
+        "move_type": "psychic",
+        "move_target": "all-allies",
+        "move_power": 0,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "status",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 851,
+        "move_name": "tera-blast",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 852,
+        "move_name": "silk-trap",
+        "move_type": "bug",
+        "move_target": "user",
+        "move_power": 0,
+        "power_points": 10,
+        "priority": 4,
+        "category": "",
+        "damage_class": "status",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 853,
+        "move_name": "axe-kick",
+        "move_type": "fighting",
+        "move_target": "selected-pokemon",
+        "move_power": 120,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 854,
+        "move_name": "last-respects",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon",
+        "move_power": 50,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 855,
+        "move_name": "lumina-crash",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 856,
+        "move_name": "order-up",
+        "move_type": "dragon",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 857,
+        "move_name": "jet-punch",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": 60,
+        "power_points": 15,
+        "priority": 1,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 858,
+        "move_name": "spicy-extract",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": 0,
+        "power_points": 15,
+        "priority": 0,
+        "category": "",
+        "damage_class": "status",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 859,
+        "move_name": "spin-out",
+        "move_type": "steel",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 5,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 860,
+        "move_name": "population-bomb",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": 20,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 861,
+        "move_name": "ice-spinner",
+        "move_type": "ice",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 15,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 862,
+        "move_name": "glaive-rush",
+        "move_type": "dragon",
+        "move_target": "selected-pokemon",
+        "move_power": 120,
+        "power_points": 5,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 863,
+        "move_name": "revival-blessing",
+        "move_type": "normal",
+        "move_target": "fainting-pokemon",
+        "move_power": 0,
+        "power_points": 1,
+        "priority": 0,
+        "category": "",
+        "damage_class": "status",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 864,
+        "move_name": "salt-cure",
+        "move_type": "rock",
+        "move_target": "selected-pokemon",
+        "move_power": 40,
+        "power_points": 15,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 865,
+        "move_name": "triple-dive",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": 30,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 95
+    },
+    {
+        "move_id": 866,
+        "move_name": "mortal-spin",
+        "move_type": "poison",
+        "move_target": "all-opponents",
+        "move_power": 30,
+        "power_points": 15,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 867,
+        "move_name": "doodle",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": 0,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "status",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 868,
+        "move_name": "fillet-away",
+        "move_type": "normal",
+        "move_target": "user",
+        "move_power": 0,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "status",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 869,
+        "move_name": "kowtow-cleave",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": 85,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 870,
+        "move_name": "flower-trick",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": 70,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 871,
+        "move_name": "torch-song",
+        "move_type": "fire",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 872,
+        "move_name": "aqua-step",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 873,
+        "move_name": "raging-bull",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": 90,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 874,
+        "move_name": "make-it-rain",
+        "move_type": "steel",
+        "move_target": "all-opponents",
+        "move_power": 120,
+        "power_points": 5,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 877,
+        "move_name": "ruination",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": 1,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 90
+    },
+    {
+        "move_id": 878,
+        "move_name": "collision-course",
+        "move_type": "fighting",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 5,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 879,
+        "move_name": "electro-drift",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 5,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 880,
+        "move_name": "shed-tail",
+        "move_type": "normal",
+        "move_target": "user",
+        "move_power": 0,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "status",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 881,
+        "move_name": "chilly-reception",
+        "move_type": "ice",
+        "move_target": "entire-field",
+        "move_power": 0,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "status",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 882,
+        "move_name": "tidy-up",
+        "move_type": "normal",
+        "move_target": "user",
+        "move_power": 0,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "status",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 883,
+        "move_name": "snowscape",
+        "move_type": "ice",
+        "move_target": "entire-field",
+        "move_power": 0,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "status",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": null
+    },
+    {
+        "move_id": 884,
+        "move_name": "pounce",
+        "move_type": "bug",
+        "move_target": "selected-pokemon",
+        "move_power": 50,
+        "power_points": 20,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 885,
+        "move_name": "trailblaze",
+        "move_type": "grass",
+        "move_target": "selected-pokemon",
+        "move_power": 50,
+        "power_points": 20,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 886,
+        "move_name": "chilling-water",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": 50,
+        "power_points": 20,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 887,
+        "move_name": "hyper-drill",
+        "move_type": "normal",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 5,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 888,
+        "move_name": "twin-beam",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 40,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 889,
+        "move_name": "rage-fist",
+        "move_type": "ghost",
+        "move_target": "selected-pokemon",
+        "move_power": 50,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 890,
+        "move_name": "armor-cannon",
+        "move_type": "fire",
+        "move_target": "selected-pokemon",
+        "move_power": 120,
+        "power_points": 5,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 891,
+        "move_name": "bitter-blade",
+        "move_type": "fire",
+        "move_target": "selected-pokemon",
+        "move_power": 90,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 892,
+        "move_name": "double-shock",
+        "move_type": "electric",
+        "move_target": "selected-pokemon",
+        "move_power": 120,
+        "power_points": 5,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 893,
+        "move_name": "gigaton-hammer",
+        "move_type": "steel",
+        "move_target": "selected-pokemon",
+        "move_power": 160,
+        "power_points": 5,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 894,
+        "move_name": "comeuppance",
+        "move_type": "dark",
+        "move_target": "specific-move",
+        "move_power": 1,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 895,
+        "move_name": "aqua-cutter",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": 70,
+        "power_points": 20,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 896,
+        "move_name": "blazing-torque",
+        "move_type": "fire",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 897,
+        "move_name": "wicked-torque",
+        "move_type": "dark",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 898,
+        "move_name": "noxious-torque",
+        "move_type": "poison",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 899,
+        "move_name": "combat-torque",
+        "move_type": "fighting",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 900,
+        "move_name": "magical-torque",
+        "move_type": "fairy",
+        "move_target": "selected-pokemon",
+        "move_power": 100,
+        "power_points": 10,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 901,
+        "move_name": "hydro-steam",
+        "move_type": "water",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 15,
+        "priority": 0,
+        "category": "",
+        "damage_class": "special",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    },
+    {
+        "move_id": 902,
+        "move_name": "psyblade",
+        "move_type": "psychic",
+        "move_target": "selected-pokemon",
+        "move_power": 80,
+        "power_points": 15,
+        "priority": 0,
+        "category": "",
+        "damage_class": "physical",
+        "status": {},
+        "move_description": "",
+        "move_accuracy": 100
+    }
+]
