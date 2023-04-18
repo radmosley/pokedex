@@ -8,12 +8,6 @@ A platform used to learn and test new methodologies. Find and collect different 
 ### React
 ### Typescript
 ## Repository
-├── README.md
-├── data
-├── backend
-│   └── django
-└── frontend
-    └── react
 ## Development
 ### Docker
 ## More resources
